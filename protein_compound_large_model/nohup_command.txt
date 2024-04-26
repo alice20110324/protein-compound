@@ -1,0 +1,4 @@
+nohup python train_davis_model1.py > davis_model1_without_cross.out 2>&1 &
+nohup python train_davis_model1.py --gpu=1 > davis_model1_without_cross.out 2>&1 &
+
+nvidia-smi

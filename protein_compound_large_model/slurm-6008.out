@@ -1,0 +1,68 @@
+OMP: Warning #124: Ignoring invalid OS proc ID 2.
+OMP: Warning #124: Ignoring invalid OS proc ID 3.
+OMP: Warning #124: Ignoring invalid OS proc ID 4.
+OMP: Warning #124: Ignoring invalid OS proc ID 5.
+OMP: Warning #124: Ignoring invalid OS proc ID 6.
+OMP: Warning #124: Ignoring invalid OS proc ID 7.
+OMP: Warning #124: Ignoring invalid OS proc ID 8.
+OMP: Warning #124: Ignoring invalid OS proc ID 9.
+OMP: Warning #124: Ignoring invalid OS proc ID 10.
+OMP: Warning #124: Ignoring invalid OS proc ID 11.
+OMP: Warning #124: Ignoring invalid OS proc ID 12.
+OMP: Warning #124: Ignoring invalid OS proc ID 13.
+OMP: Warning #124: Ignoring invalid OS proc ID 14.
+OMP: Warning #124: Ignoring invalid OS proc ID 15.
+OMP: Warning #124: Ignoring invalid OS proc ID 16.
+OMP: Warning #124: Ignoring invalid OS proc ID 17.
+OMP: Warning #124: Ignoring invalid OS proc ID 18.
+OMP: Warning #124: Ignoring invalid OS proc ID 19.
+OMP: Warning #124: Ignoring invalid OS proc ID 20.
+OMP: Warning #124: Ignoring invalid OS proc ID 21.
+OMP: Warning #124: Ignoring invalid OS proc ID 22.
+OMP: Warning #124: Ignoring invalid OS proc ID 23.
+OMP: Warning #124: Ignoring invalid OS proc ID 24.
+OMP: Warning #124: Ignoring invalid OS proc ID 25.
+OMP: Warning #124: Ignoring invalid OS proc ID 26.
+OMP: Warning #124: Ignoring invalid OS proc ID 27.
+OMP: Warning #124: Ignoring invalid OS proc ID 28.
+OMP: Warning #124: Ignoring invalid OS proc ID 29.
+OMP: Warning #124: Ignoring invalid OS proc ID 30.
+OMP: Warning #124: Ignoring invalid OS proc ID 31.
+OMP: Warning #124: Ignoring invalid OS proc ID 32.
+OMP: Warning #124: Ignoring invalid OS proc ID 33.
+OMP: Warning #124: Ignoring invalid OS proc ID 34.
+OMP: Warning #124: Ignoring invalid OS proc ID 35.
+OMP: Warning #124: Ignoring invalid OS proc ID 36.
+OMP: Warning #124: Ignoring invalid OS proc ID 37.
+OMP: Warning #124: Ignoring invalid OS proc ID 38.
+OMP: Warning #124: Ignoring invalid OS proc ID 39.
+OMP: Warning #124: Ignoring invalid OS proc ID 40.
+OMP: Warning #124: Ignoring invalid OS proc ID 41.
+OMP: Warning #124: Ignoring invalid OS proc ID 42.
+OMP: Warning #124: Ignoring invalid OS proc ID 43.
+OMP: Warning #124: Ignoring invalid OS proc ID 44.
+OMP: Warning #124: Ignoring invalid OS proc ID 45.
+OMP: Warning #124: Ignoring invalid OS proc ID 46.
+OMP: Warning #124: Ignoring invalid OS proc ID 47.
+OMP: Warning #124: Ignoring invalid OS proc ID 48.
+OMP: Warning #124: Ignoring invalid OS proc ID 49.
+OMP: Warning #124: Ignoring invalid OS proc ID 50.
+OMP: Warning #124: Ignoring invalid OS proc ID 51.
+OMP: Warning #124: Ignoring invalid OS proc ID 52.
+OMP: Warning #124: Ignoring invalid OS proc ID 53.
+OMP: Warning #124: Ignoring invalid OS proc ID 54.
+OMP: Warning #124: Ignoring invalid OS proc ID 55.
+OMP: Warning #124: Ignoring invalid OS proc ID 56.
+OMP: Warning #124: Ignoring invalid OS proc ID 57.
+OMP: Warning #124: Ignoring invalid OS proc ID 58.
+OMP: Warning #124: Ignoring invalid OS proc ID 59.
+OMP: Warning #124: Ignoring invalid OS proc ID 60.
+OMP: Warning #124: Ignoring invalid OS proc ID 61.
+OMP: Warning #124: Ignoring invalid OS proc ID 62.
+OMP: Warning #124: Ignoring invalid OS proc ID 63.
+Traceback (most recent call last):
+  File "/public/home/zhengfang/esm-main/train_refined_set.py", line 1, in <module>
+    from loader import MoleculeDataset, SeqDataset,SeqMolDataset,SmileDataset#########################
+  File "/public/home/zhengfang/esm-main/loader.py", line 10, in <module>
+    from rdkit import Chem
+ModuleNotFoundError: No module named 'rdkit'

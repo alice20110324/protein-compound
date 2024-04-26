@@ -1,0 +1,55 @@
+nohup: ignoring input
+Global seed set to 42
+True
+Not from scratch
+rese:model_gin
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Pre-processed data found: /media/ext_disk/zhenfang/dataset/davis/processed/davis_train_mols.pt, loading ...
+seq_train_dataset: <class 'pandas.core.series.Series'>
+seq_train_dataset: <class 'loader.SeqDataset'>
+scaffold
+fold: 0
+/home/zhenfang/anaconda3/envs/pytorch_3.8/lib/python3.8/site-packages/torch_geometric/deprecation.py:22: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+x1: torch.Size([10, 256]) <class 'torch.Tensor'>
+x2: torch.Size([10, 256]) <class 'torch.Tensor'>
+values: torch.Size([10, 256])
+values: torch.Size([10, 256])
+values: torch.Size([10, 256, 256])
+Traceback (most recent call last):
+  File "train_davis_model1_2_layer_multi_heads.py", line 702, in <module>
+    train_loss=train(args, epoch, model, device, train_loader, optimizer)
+  File "train_davis_model1_2_layer_multi_heads.py", line 578, in train
+    pred=model(seq_data_list,B,C)#model is error
+  File "/home/zhenfang/anaconda3/envs/pytorch_3.8/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zhenfang/esm/SeqMolSmile_model1_2_layer_multi_head.py", line 742, in forward
+    x111=  self.mol_cross_attention(x11,x11,x22) 
+  File "/home/zhenfang/anaconda3/envs/pytorch_3.8/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zhenfang/esm/SeqMolSmile_model1_2_layer_multi_head.py", line 236, in forward
+    values = values.reshape(N, value_len, self.heads, self.head_dim)
+RuntimeError: shape '[10, 256, 1, 1]' is invalid for input of size 655360

@@ -1,0 +1,64 @@
+nohup: ignoring input
+Global seed set to 42
+True
+Not from scratch
+rese:model_gin
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Using Rotation Embedding
+Pre-processed data found: /media/ext_disk/zhenfang/dataset/davis/processed/davis_train_mols.pt, loading ...
+seq_train_dataset: <class 'pandas.core.series.Series'>
+seq_train_dataset: <class 'loader.SeqDataset'>
+scaffold
+fold: 0
+/home/zhenfang/anaconda3/envs/pytorch_3.8/lib/python3.8/site-packages/torch_geometric/deprecation.py:22: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+/home/zhenfang/anaconda3/envs/pytorch_3.8/lib/python3.8/site-packages/fast_transformers/feature_maps/fourier_features.py:37: UserWarning: torch.qr is deprecated in favor of torch.linalg.qr and will be removed in a future PyTorch release.
+The boolean parameter 'some' has been replaced with a string parameter 'mode'.
+Q, R = torch.qr(A, some)
+should be replaced with
+Q, R = torch.linalg.qr(A, 'reduced' if some else 'complete') (Triggered internally at ../aten/src/ATen/native/BatchLinearAlgebra.cpp:2349.)
+  Q, _ = torch.qr(block)
+Traceback (most recent call last):
+  File "train_davis_model1.py", line 690, in <module>
+    train_loss=train(args, epoch, model, device, train_loader, optimizer)
+  File "train_davis_model1.py", line 566, in train
+    pred=model(seq_data_list,B,C)#model is error
+  File "/home/zhenfang/anaconda3/envs/pytorch_3.8/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zhenfang/esm/SeqMolSmile_model1.py", line 399, in forward
+    results = self.protein_model(batch_tokens, repr_layers=[6], return_contacts=False)###############3
+  File "/home/zhenfang/anaconda3/envs/pytorch_3.8/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zhenfang/esm/esm/model/esm2.py", line 112, in forward
+    x, attn = layer(
+  File "/home/zhenfang/anaconda3/envs/pytorch_3.8/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zhenfang/esm/esm/modules.py", line 125, in forward
+    x, attn = self.self_attn(
+  File "/home/zhenfang/anaconda3/envs/pytorch_3.8/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zhenfang/esm/esm/multihead_attention.py", line 371, in forward
+    attn_weights = attn_weights.masked_fill(
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.12 GiB (GPU 0; 23.68 GiB total capacity; 1.46 GiB already allocated; 970.50 MiB free; 2.55 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

@@ -1,0 +1,1 @@
+export LD_LIBRARY_PATH=/home/zhangsanyan/anaconda3/envs/py38/lib
